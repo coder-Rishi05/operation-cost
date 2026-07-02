@@ -1,4 +1,3 @@
-
 import Appointment from "../models/Appointment.js";
 import PatientQuery from "../models/PatientQuery.js";
 import * as XLSX from "xlsx";
