@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { BASE_URL } from "../data/url";
 import {
   Phone,
   Mail,
@@ -37,8 +38,6 @@ const contactInfo = [
 ];
 
 const cities = ["Chandigarh", "Mohali", "Panchkula", "Delhi NCR", "Other"];
-
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -78,17 +77,24 @@ const ContactUs = () => {
 
     setIsSubmitting(true);
     try {
-      await axios.post(`http://localhost:3000/api/appointments/contact-us`, {
-        patientName: formData.patientName,
-        phoneNumber: formData.phoneNumber,
-        patientCity: formData.city,
-        patientMessage: formData.message,
-      });
+      await axios.post(
+        `https://backend1-4z5g.onrender.com/api/appointments/contact-us`,
+        {
+          patientName: formData.patientName,
+          phoneNumber: formData.phoneNumber,
+          patientCity: formData.city,
+          patientMessage: formData.message,
+        },
+      );
       setIsSuccess(true);
       setFormData({ patientName: "", phoneNumber: "", city: "", message: "" });
     } catch (error) {
-      console.log(error);
-      setErrors({ submit: "Something went wrong. Please try again." });
+      console.log(error.response);
+      setErrors({
+        submit:
+          error.response?.data?.message ||
+          "Something went wrong. Please try again.",
+      });
     } finally {
       setIsSubmitting(false);
 
@@ -262,7 +268,7 @@ const ContactUs = () => {
                     />
                     <textarea
                       name="message"
-                      placeholder="Type your message"
+                      placeholder=" Type your message"
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import {BASE_URL} from "../data/url"
 
 import {
   X,
@@ -68,7 +69,7 @@ const PopupForm = () => {
     setIsSubmitting(true);
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/appointments/createAppointment",
+        `${BASE_URL}/api/appointments/createAppointment`,
         formData,
       );
 

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { BASE_URL } from "../data/url";
 
 const Admin = () => {
   const [patients, setPatients] = useState([]);
@@ -12,7 +13,7 @@ const Admin = () => {
       setLoading(true);
 
       const response = await axios.get(
-        "http://localhost:3000/api/appointments/getappointments",
+        `${BASE_URL}/api/appointments/getappointments`,
       );
 
       setPatients(response.data.data);
@@ -27,7 +28,7 @@ const Admin = () => {
   const downloadExcel = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/appointments/export",
+        `${BASE_URL}/api/appointments/export`,
         {
           responseType: "blob",
         },
@@ -52,7 +53,7 @@ const Admin = () => {
   const downloadExcelQueries = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/appointments/export-queries",
+        `${BASE_URL}/api/appointments/export-queries`,
         {
           responseType: "blob",
         },
@@ -79,7 +80,7 @@ const Admin = () => {
     try {
       setLoading(true);
       const response = await axios.get(
-        "http://localhost:3000/api/appointments/getPatientQueries",
+        `${BASE_URL}/api/appointments/getPatientQueries`,
       );
 
       setPatientsQueries(response.data.data);
