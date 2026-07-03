@@ -1,251 +1,279 @@
-const treatmentDetails = {
-  "knee-replacement": {
-    title: "Knee Replacement",
-    image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1e",
+// const treatmentDetails = {
+//   "knee-replacement": {
+//     title: "Knee Replacement",
 
-    description:
-      "Knee replacement surgery is performed to replace damaged knee joints with artificial implants and relieve chronic pain.",
+//     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1e",
 
-    symptoms: [
-      "Severe knee pain",
-      "Difficulty walking",
-      "Joint stiffness",
-      "Swelling in the knee",
-    ],
+//     heroDescription:
+//       "Knee replacement surgery relieves chronic knee pain by replacing the damaged joint with an artificial implant, helping patients regain mobility and improve daily life.",
 
-    causes: [
-      "Osteoarthritis",
-      "Rheumatoid Arthritis",
-      "Sports injuries",
-      "Age-related degeneration",
-    ],
+//     overview:
+//       "Knee replacement is recommended for people with severe arthritis or joint damage when medications and physiotherapy no longer provide relief. The damaged joint is replaced with a durable artificial implant for smoother movement and long-term pain relief.",
 
-    treatment:
-      "We use advanced minimally invasive and robotic-assisted knee replacement techniques for faster recovery.",
+//     types: [
+//       {
+//         title: "Total Knee Replacement",
+//         description:
+//           "The entire knee joint is replaced with an artificial implant.",
+//       },
+//       {
+//         title: "Partial Knee Replacement",
+//         description:
+//           "Only the damaged part of the knee is replaced while preserving healthy tissue.",
+//       },
+//       {
+//         title: "Robotic-Assisted Knee Replacement",
+//         description:
+//           "Advanced robotic technology improves surgical accuracy and recovery.",
+//       },
+//     ],
 
-    recovery:
-      "Most patients recover within 4 to 6 weeks after surgery.",
+//     symptoms: [
+//       "Severe knee pain",
+//       "Joint stiffness",
+//       "Difficulty walking",
+//       "Swelling around the knee",
+//       "Pain while climbing stairs",
+//       "Limited knee movement",
+//     ],
 
-    youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  },
+//     feelLike: [
+//       "Constant aching pain",
+//       "Stiffness after resting",
+//       "Grinding sensation",
+//       "Difficulty standing",
+//       "Pain during daily activities",
+//     ],
 
-  "hip-replacement": {
-    title: "Hip Replacement",
-    image:
-      "https://images.unsplash.com/photo-1580281657527-47f249e8f4df",
+//     causes: [
+//       "Osteoarthritis",
+//       "Rheumatoid arthritis",
+//       "Sports injuries",
+//       "Previous fractures",
+//       "Age-related joint wear",
+//     ],
 
-    description:
-      "Hip replacement surgery replaces damaged hip joints with artificial implants to restore mobility.",
+//     riskFactors: [
+//       "Age above 55 years",
+//       "Obesity",
+//       "Previous knee injury",
+//       "Family history",
+//       "Inflammatory arthritis",
+//     ],
 
-    symptoms: [
-      "Hip pain",
-      "Difficulty standing",
-      "Reduced mobility",
-      "Pain while walking",
-    ],
+//     diagnosis: [
+//       "Physical examination",
+//       "X-ray",
+//       "MRI (if required)",
+//       "Blood tests",
+//     ],
 
-    causes: [
-      "Arthritis",
-      "Hip fracture",
-      "Joint damage",
-      "Age-related wear",
-    ],
+//     nonSurgicalTreatment: [
+//       "Pain medications",
+//       "Physiotherapy",
+//       "Weight management",
+//       "Knee braces",
+//       "Joint injections",
+//     ],
 
-    treatment:
-      "Advanced hip replacement procedures using modern implants and minimally invasive techniques.",
+//     surgicalTreatment:
+//       "The damaged knee joint is replaced with a durable artificial implant using modern minimally invasive or robotic-assisted techniques for improved accuracy and faster recovery.",
 
-    recovery:
-      "Patients generally recover within 6 to 8 weeks.",
+//     recovery: {
+//       hospitalStay: "2–4 Days",
+//       walking: "Within 24 Hours",
+//       officeWork: "4–6 Weeks",
+//       driving: "4–6 Weeks",
+//       fullRecovery: "3–6 Months",
+//     },
 
-    youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  },
+//     complications: [
+//       "Infection",
+//       "Blood clots",
+//       "Implant loosening",
+//       "Knee stiffness",
+//       "Persistent pain",
+//     ],
 
-  "spine-surgery": {
-    title: "Spine Surgery",
-    image:
-      "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb",
+//     prevention: [
+//       "Maintain healthy weight",
+//       "Exercise regularly",
+//       "Strengthen leg muscles",
+//       "Avoid knee injuries",
+//     ],
 
-    description:
-      "Spine surgery is performed to treat spinal disorders and relieve chronic back pain.",
+//     treatmentInfo: {
+//       disease: "Knee Arthritis",
+//       surgery: "Knee Replacement",
+//       duration: "1.5–2 Hours",
+//       anaesthesia: "Spinal / General",
+//       hospitalStay: "2–4 Days",
+//       treatedBy: "Orthopedic Surgeon",
+//       successRate: "95%+",
+//       recoveryTime: "3–6 Months",
+//     },
 
-    symptoms: [
-      "Back pain",
-      "Numbness",
-      "Weakness",
-      "Difficulty walking",
-    ],
+//     cost: {
+//       india: "₹1,80,000 – ₹4,50,000",
+//       dependsOn: ["Hospital", "City", "Implant type", "Insurance"],
+//     },
 
-    causes: [
-      "Herniated disc",
-      "Spinal stenosis",
-      "Spinal injury",
-      "Degenerative disease",
-    ],
+//     faq: [
+//       {
+//         question: "Who needs knee replacement surgery?",
+//         answer:
+//           "People with severe arthritis or chronic knee pain that affects daily activities.",
+//       },
+//       {
+//         question: "How long does the surgery take?",
+//         answer: "Most knee replacement surgeries take around 1.5 to 2 hours.",
+//       },
+//       {
+//         question: "When can I walk after surgery?",
+//         answer: "Most patients start walking within 24 hours with assistance.",
+//       },
+//       {
+//         question: "How long do knee implants last?",
+//         answer: "Most modern implants last 15–25 years with proper care.",
+//       },
+//     ],
 
-    treatment:
-      "Advanced minimally invasive spine surgery techniques are used for better outcomes.",
+//     youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+//   },
 
-    recovery:
-      "Recovery may take 4 to 8 weeks depending on the procedure.",
+//   "hip-replacement": {
+//     title: "Hip Replacement",
 
-    youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  },
+//     image: "https://images.unsplash.com/photo-1580281657527-47f249e8f4df",
 
-  "acl-reconstruction": {
-    title: "ACL Reconstruction",
-    image:
-      "https://images.unsplash.com/photo-1538108149393-fbbd81895907",
+//     heroDescription:
+//       "Hip replacement surgery replaces a damaged hip joint with an artificial implant to reduce pain, improve movement, and restore an active lifestyle.",
 
-    description:
-      "ACL reconstruction repairs torn ligaments in the knee and restores stability.",
+//     overview:
+//       "Hip replacement is recommended for patients with severe arthritis, fractures, or joint damage when non-surgical treatments no longer provide relief. The artificial joint helps restore smooth and pain-free movement.",
 
-    symptoms: [
-      "Knee instability",
-      "Swelling",
-      "Pain during movement",
-      "Limited activity",
-    ],
+//     types: [
+//       {
+//         title: "Total Hip Replacement",
+//         description: "Both the ball and socket of the hip joint are replaced.",
+//       },
+//       {
+//         title: "Partial Hip Replacement",
+//         description: "Only the damaged femoral head is replaced.",
+//       },
+//       {
+//         title: "Revision Hip Replacement",
+//         description: "Performed to replace a worn-out or failed hip implant.",
+//       },
+//     ],
 
-    causes: [
-      "Sports injuries",
-      "Sudden twisting",
-      "Falls",
-      "Accidents",
-    ],
+//     symptoms: [
+//       "Persistent hip pain",
+//       "Difficulty walking",
+//       "Hip stiffness",
+//       "Pain while standing",
+//       "Reduced mobility",
+//       "Pain during sleep",
+//     ],
 
-    treatment:
-      "Arthroscopic ACL reconstruction surgery is performed by experienced surgeons.",
+//     feelLike: [
+//       "Deep hip pain",
+//       "Difficulty climbing stairs",
+//       "Pain while bending",
+//       "Limping",
+//       "Reduced flexibility",
+//     ],
 
-    recovery:
-      "Recovery usually takes 6 to 9 months with physiotherapy.",
+//     causes: [
+//       "Osteoarthritis",
+//       "Hip fractures",
+//       "Rheumatoid arthritis",
+//       "Avascular necrosis",
+//       "Sports injuries",
+//     ],
 
-    youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  },
+//     riskFactors: [
+//       "Older age",
+//       "Obesity",
+//       "Previous hip injury",
+//       "Family history",
+//       "Inflammatory arthritis",
+//     ],
 
-  "sports-injury": {
-    title: "Sports Injury Treatment",
-    image:
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a",
+//     diagnosis: ["Physical examination", "X-ray", "MRI Scan", "Blood tests"],
 
-    description:
-      "Comprehensive treatment for injuries caused during sports activities.",
+//     nonSurgicalTreatment: [
+//       "Pain medications",
+//       "Physiotherapy",
+//       "Walking aids",
+//       "Weight management",
+//       "Joint injections",
+//     ],
 
-    symptoms: [
-      "Pain",
-      "Swelling",
-      "Reduced mobility",
-      "Muscle weakness",
-    ],
+//     surgicalTreatment:
+//       "The damaged hip joint is replaced with a metal or ceramic implant using modern surgical techniques that improve mobility and reduce recovery time.",
 
-    causes: [
-      "Overuse",
-      "Trauma",
-      "Improper training",
-      "Poor technique",
-    ],
+//     recovery: {
+//       hospitalStay: "2–5 Days",
+//       walking: "Within 24 Hours",
+//       officeWork: "4–6 Weeks",
+//       driving: "4–6 Weeks",
+//       fullRecovery: "3–6 Months",
+//     },
 
-    treatment:
-      "Physiotherapy, rehabilitation, and minimally invasive procedures are provided.",
+//     complications: [
+//       "Infection",
+//       "Blood clots",
+//       "Hip dislocation",
+//       "Implant loosening",
+//       "Nerve injury",
+//     ],
 
-    recovery:
-      "Recovery depends on the severity of the injury.",
+//     prevention: [
+//       "Maintain healthy weight",
+//       "Exercise regularly",
+//       "Prevent falls",
+//       "Strengthen hip muscles",
+//     ],
 
-    youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  },
+//     treatmentInfo: {
+//       disease: "Hip Arthritis",
+//       surgery: "Hip Replacement",
+//       duration: "2–3 Hours",
+//       anaesthesia: "Spinal / General",
+//       hospitalStay: "2–5 Days",
+//       treatedBy: "Orthopedic Surgeon",
+//       successRate: "95%+",
+//       recoveryTime: "3–6 Months",
+//     },
 
-  "fracture-care": {
-    title: "Fracture Care",
-    image:
-      "https://images.unsplash.com/photo-1666214280557-f1b5022eb634",
+//     cost: {
+//       india: "₹2,00,000 – ₹5,00,000",
+//       dependsOn: ["Hospital", "City", "Implant type", "Insurance"],
+//     },
 
-    description:
-      "Complete fracture management for all types of bone injuries.",
+//     faq: [
+//       {
+//         question: "Who should consider hip replacement?",
+//         answer:
+//           "Patients with severe hip pain, arthritis, or fractures affecting daily life.",
+//       },
+//       {
+//         question: "How long does hip replacement surgery take?",
+//         answer: "The surgery usually takes about 2 to 3 hours.",
+//       },
+//       {
+//         question: "When can I walk after surgery?",
+//         answer: "Most patients begin walking within 24 hours with support.",
+//       },
+//       {
+//         question: "How long does a hip implant last?",
+//         answer: "A modern hip implant can last 15–25 years with proper care.",
+//       },
+//     ],
 
-    symptoms: [
-      "Severe pain",
-      "Swelling",
-      "Bruising",
-      "Bone deformity",
-    ],
+//     youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+//   },
+// };
 
-    causes: [
-      "Falls",
-      "Road accidents",
-      "Sports injuries",
-      "Trauma",
-    ],
-
-    treatment:
-      "Casting, fixation, and surgical procedures are performed if required.",
-
-    recovery:
-      "Most fractures heal within 6 to 12 weeks.",
-
-    youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  },
-
-  arthritis: {
-    title: "Arthritis Treatment",
-    image:
-      "https://images.unsplash.com/photo-1579684385127-1ef15d508118",
-
-    description:
-      "Arthritis treatment helps reduce pain and improve joint function.",
-
-    symptoms: [
-      "Joint pain",
-      "Stiffness",
-      "Swelling",
-      "Reduced movement",
-    ],
-
-    causes: [
-      "Age",
-      "Autoimmune disease",
-      "Genetics",
-      "Joint wear and tear",
-    ],
-
-    treatment:
-      "Medication, physiotherapy, injections, and surgery are offered based on severity.",
-
-    recovery:
-      "Recovery varies according to the patient's condition.",
-
-    youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  },
-
-  "joint-replacement": {
-    title: "Joint Replacement",
-    image:
-      "https://images.unsplash.com/photo-1584515933487-779824d29309",
-
-    description:
-      "Joint replacement surgery replaces damaged joints with artificial implants.",
-
-    symptoms: [
-      "Chronic joint pain",
-      "Limited mobility",
-      "Joint stiffness",
-      "Difficulty walking",
-    ],
-
-    causes: [
-      "Arthritis",
-      "Joint damage",
-      "Injury",
-      "Age-related degeneration",
-    ],
-
-    treatment:
-      "Robotic-assisted joint replacement surgeries are performed for better recovery.",
-
-    recovery:
-      "Recovery usually takes 4 to 6 weeks.",
-
-    youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  },
-};
-
-export default treatmentDetails;
+// export default treatmentDetails;

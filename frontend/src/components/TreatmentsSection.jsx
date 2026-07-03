@@ -5,12 +5,9 @@ const TreatmentsSection = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
-
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold">
-            Our Orthopedic Treatments
-          </h2>
+          <h2 className="text-4xl font-bold">Our Orthopedic Treatments</h2>
 
           <p className="text-gray-600 mt-4">
             Advanced orthopedic treatments with expert care.
@@ -19,7 +16,6 @@ const TreatmentsSection = () => {
 
         {/* Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
           {treatments.map((item) => (
             <Link
               key={item.id}
@@ -33,17 +29,12 @@ const TreatmentsSection = () => {
               />
 
               <div className="p-6">
-                <h3 className="text-xl font-bold">
-                  {item.title}
-                </h3>
+                <h3 className="text-xl font-bold">{item.title}</h3>
 
-                <p className="text-blue-600 mt-3 font-semibold">
-                  Learn More →
-                </p>
+                <p className="text-blue-600 mt-3 font-semibold">Learn More →</p>
               </div>
             </Link>
           ))}
-
         </div>
       </div>
     </section>
