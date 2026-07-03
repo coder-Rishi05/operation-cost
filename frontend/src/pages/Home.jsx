@@ -20,7 +20,7 @@ const Home = () => {
       <HeroSection setShowPopup={setShowPopup} />
       <TreatmentsSection />
       <WhyChooseUs />
-      <DoctorSection />
+      <DoctorSection setShowPopup={setShowPopup} />
       <Testimonials />
       <InsurancePartners />
       <HowItWorks />

@@ -9,6 +9,7 @@ import Treatments from "./pages/Treatments";
 import Footer from "./components/Footer";
 import TreatmentDetails from "./pages/TreatmentDetails";
 import PopupForm from "./components/PopupForm";
+import DoctorDetail from "./components/DoctorDetail";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/doctors" element={<Doctors />} />
+        <Route path="/doctors/:id" element={<DoctorDetail />} />
+
         <Route path="/contact" element={<Contact />} />
         <Route path="/treatments" element={<Treatments />} />
         <Route path="/treatment/:id" element={<TreatmentDetails />} />

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import {BASE_URL} from "../data/url"
+import { BASE_URL } from "../config/url";
 
 import {
   X,
@@ -101,7 +101,7 @@ const PopupForm = () => {
         <button
           type="button"
           onClick={() => closePopup()}
-          className="absolute top-5 right-5 p-2 rounded-full text-gray-400 hover:text-gray-700 hover:bg-gray-100 transition-colors"
+          className="absolute cursor-pointer top-5 right-5 p-2 rounded-full text-gray-400 hover:text-gray-700 hover:bg-gray-100 transition-colors"
         >
           <X size={20} />
         </button>

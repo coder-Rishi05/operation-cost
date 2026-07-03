@@ -14,7 +14,7 @@ const TreatmentDetails = () => {
     <div>
       {/* Hero */}
 
-      <section className="relative h-[500px]">
+      <section className="relative h-125">
         <img
           src={treatment.image}
           alt={treatment.title}

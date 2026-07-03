@@ -79,7 +79,7 @@ import { usePopup } from "../context/PopupContext";
 const HeroSection = () => {
   const { openPopup } = usePopup();
   return (
-    <section className="bg-gradient-to-r from-blue-50 to-white py-12 sm:py-16">
+    <section className="bg-linear-to-r from-blue-50 to-white py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 items-center">
         {/* Left Side */}
         <div>
@@ -145,7 +145,7 @@ const HeroSection = () => {
           <img
             src="https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Doctor with Patient"
-            className="rounded-3xl shadow-2xl w-full h-[300px] sm:h-[400px] lg:h-[550px] object-cover"
+            className="rounded-3xl shadow-2xl w-full h-75 sm:h-100 lg:h-137.5 object-cover"
           />
 
           {/* Floating Card */}
