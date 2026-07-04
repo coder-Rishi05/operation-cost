@@ -72,11 +72,11 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-3 shrink-0">
           {/* Uncomment if using logo */}
 
-          {/* <img
+          <img
             src="/Logos/optrans.png"
             alt="Operation Cost"
             className="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 object-contain"
-          /> */}
+          />
 
           <div className="leading-none">
             <h1 className="font-bold text-lg sm:text-xl lg:text-3xl">

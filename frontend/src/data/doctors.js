@@ -112,34 +112,45 @@
 export const doctors = [
   {
     id: 1,
-    name: "Dr. Rajesh Sharma",
-    speciality: "Senior Orthopedic Surgeon",
-    qualification: "MS Ortho, Fellowship Joint Replacement",
-    experience: "15+ Years Experience",
+    name: "Dr. Shekh Mohammed Khan",
+    speciality: "Orthopedic & Joint Replacement Surgeon",
+    qualification: "MS Orthopaedics",
+    experience: "15+ Years Experience", // Update if you get official data
     rating: 4.9,
-    reviews: 320,
+    reviews: 78, // Update if using verified review source
     available: true,
-    image:
-      "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80&auto=format&fit=crop",
+    image: "/Doctor Images/doctor1.webp",
+
     about:
-      "Dr. Rajesh Sharma specializes in complex joint replacement and revision surgeries, having performed over 3,000 knee and hip replacements. He focuses on minimally invasive techniques that reduce recovery time.",
-    languages: ["English", "Hindi", "Punjabi"],
+      "Dr. Shekh Mohammed Khan is an Orthopedic & Joint Replacement Surgeon specializing in knee, hip replacement, arthroscopy, sports injuries, and trauma care. He is known for advanced orthopedic treatments and robotic-assisted joint replacement surgeries.",
+
+    languages: ["English", "Hindi"],
+
     services: [
       "Total Knee Replacement",
       "Hip Replacement",
-      "Revision Surgery",
-      "Robotic-Assisted Surgery",
+      "Arthroscopy",
+      "Sports Injury Treatment",
+      "Trauma Surgery",
+      "Robotic Joint Replacement",
     ],
-    education: [
-      "MS Orthopedics - AIIMS Delhi",
-      "Fellowship in Joint Replacement - Singapore General Hospital",
-    ],
-    timings: { days: "Mon - Sat", time: "10:00 AM - 04:00 PM" },
-    location: {
-      clinic: "OperationCost Ortho Center",
-      address: "Sector 34, Chandigarh",
+
+    education: ["MS Orthopaedics"],
+
+    timings: {
+      days: "Mon - Sat",
+      time: "06:00 AM - 08:00 PM", // Change if official timings are available
     },
-    fee: 800,
+
+    location: {
+      clinic: "Dr. Shekh Orthocare",
+      address:
+        "34, Boring Rd, Bismilla Colony, Jagannath Puri, Jhotwara, Jaipur, Rajasthan 302012",
+    },
+
+    fee: 800, // Replace with actual consultation fee if known
+
+    phone: "+91 97850 22211",
   },
   {
     id: 2,
