@@ -731,7 +731,7 @@ const TreatmentDetails = () => {
                     {item.question}
                   </h3>
 
-                  <span className="text-3xl">
+                  <span className="text-3xl cursor-pointer">
                     {openFaq === index ? "−" : "+"}
                   </span>
                 </button>

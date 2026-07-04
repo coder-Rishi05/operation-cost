@@ -10,10 +10,12 @@ import Footer from "./components/Footer";
 import TreatmentDetails from "./pages/TreatmentDetails";
 import PopupForm from "./components/PopupForm";
 import DoctorDetail from "./components/DoctorDetail";
+import ScrollToTop from "./pages/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
