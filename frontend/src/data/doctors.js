@@ -119,7 +119,7 @@ export const doctors = [
     rating: 4.9,
     reviews: 78, // Update if using verified review source
     available: true,
-    image: "/Doctor Images/doctor1.webp",
+    image: "/DoctorsImages/doctor1.webp",
 
     about:
       "Dr. Shekh Mohammed Khan is an Orthopedic & Joint Replacement Surgeon specializing in knee, hip replacement, arthroscopy, sports injuries, and trauma care. He is known for advanced orthopedic treatments and robotic-assisted joint replacement surgeries.",

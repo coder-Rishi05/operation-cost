@@ -3,6 +3,7 @@ import { Star, GraduationCap, CalendarCheck } from "lucide-react";
 import { usePopup } from "../context/PopupContext";
 import { doctors } from "../data/doctors";
 
+
 const DoctorSection = () => {
   const { openPopup } = usePopup();
 

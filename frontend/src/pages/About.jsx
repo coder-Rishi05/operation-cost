@@ -10,36 +10,14 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { usePopup } from "../context/PopupContext"; // ✅ sirf named import, duplicate hataya
+import { Link } from "react-router-dom"; // ✅ Link import kiya, jo missing tha
+import { doctors } from "../data/doctors"; // ✅ doctors data import kiya
 
 const stats = [
   { label: "Surgeries Performed", value: "500+", icon: Stethoscope },
   { label: "Years of Experience", value: "15+", icon: Award },
   { label: "Success Rate", value: "98%", icon: HeartPulse },
   { label: "Support Available", value: "24/7", icon: Clock },
-];
-
-const doctors = [
-  {
-    name: "Dr. Ramesh Kapoor",
-    specialization: "Joint Replacement Surgeon",
-    qualification: "MS Ortho, Fellowship in Joint Replacement",
-    experience: "18 Years Experience",
-    image: "/doctors/doctor1.jpg",
-  },
-  {
-    name: "Dr. Anjali Mehta",
-    specialization: "Spine Specialist",
-    qualification: "MBBS, MS Ortho, Spine Fellowship",
-    experience: "12 Years Experience",
-    image: "/doctors/doctor2.jpg",
-  },
-  {
-    name: "Dr. Vikram Sharma",
-    specialization: "Sports Injury & ACL Surgeon",
-    qualification: "MS Ortho, Diploma Sports Medicine",
-    experience: "10 Years Experience",
-    image: "/doctors/doctor3.jpg",
-  },
 ];
 
 const features = [
@@ -79,6 +57,8 @@ const testimonials = [
     rating: 5,
   },
 ];
+
+
 
 const AboutUs = () => {
   const { openPopup } = usePopup(); // ✅ context se function le rahe hain, local state nahi
@@ -187,25 +167,27 @@ const AboutUs = () => {
             <span className="text-xs font-semibold tracking-wide text-blue-600 bg-blue-100 px-3 py-1 rounded-full">
               OUR SPECIALISTS
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-4">
+            <h2 className="text-2xl  sm:text-3xl font-bold text-gray-900 mt-4">
               Meet Our Doctors
             </h2>
             <p className="text-gray-500 mt-2">
               Experienced specialists dedicated to your recovery
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 cursor-pointer md:grid-cols-3 gap-6">
             {doctors.map((doc) => (
               <div
                 key={doc.name}
                 className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all"
               >
-                <img
-                  src={doc.image}
-                  alt={doc.name}
-                  className="w-full h-56 object-cover bg-gray-100"
-                  loading="lazy"
-                />
+                <Link to={`/doctors/${doc.id}`}>
+                  <img
+                    src={doc.image}
+                    alt={doc.name}
+                    className="w-full h-56 object-cover bg-gray-100"
+                    loading="lazy"
+                  />
+                </Link>
                 <div className="p-5">
                   <h3 className="font-bold text-lg text-gray-900">
                     {doc.name}
