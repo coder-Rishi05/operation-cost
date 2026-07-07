@@ -1,9 +1,8 @@
 const arthroscopy = {
-  "arthroscopy": {
+  arthroscopy: {
     title: "Arthroscopy Surgery",
 
-    image:
-      "https://images.unsplash.com/photo-1584515933487-779824d29309",
+    image: "/TreatmentImages/Arthroscpy Surgery.png",
 
     heroDescription:
       "Arthroscopy is a minimally invasive orthopedic procedure used to diagnose and treat joint problems with smaller incisions, less pain, faster recovery, and excellent clinical outcomes.",

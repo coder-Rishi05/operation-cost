@@ -2,7 +2,7 @@ const kneeReplacement = {
   "knee-replacement": {
     title: "Knee Replacement",
 
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1e",
+    image: "/TreatmentImages/kneetreatment.png",
 
     heroDescription:
       "Knee replacement surgery relieves chronic knee pain by replacing the damaged joint with an artificial implant, helping patients regain mobility and improve daily life.",

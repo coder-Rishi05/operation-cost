@@ -2,8 +2,7 @@ const shoulderArthroscopy = {
   "shoulder-arthroscopy": {
     title: "Shoulder Arthroscopy Surgery",
 
-    image:
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a",
+    image: "/TreatmentImages/shoulderArthroscopy.png",
 
     heroDescription:
       "Shoulder Arthroscopy is a minimally invasive procedure used to diagnose and treat shoulder conditions through tiny incisions, providing less pain, faster recovery, and improved shoulder function.",

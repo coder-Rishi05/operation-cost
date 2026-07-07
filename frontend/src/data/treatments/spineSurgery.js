@@ -2,8 +2,7 @@ const spineSurgery = {
   "spine-surgery": {
     title: "Spine Surgery",
 
-    image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
+    image: "/TreatmentImages/spinesurgery.png",
 
     heroDescription:
       "Spine Surgery helps relieve chronic back or neck pain, restore mobility, and improve quality of life through advanced minimally invasive and open surgical techniques.",
@@ -14,8 +13,7 @@ const spineSurgery = {
     types: [
       {
         title: "Discectomy",
-        description:
-          "Removal of a herniated disc pressing on spinal nerves.",
+        description: "Removal of a herniated disc pressing on spinal nerves.",
       },
       {
         title: "Spinal Fusion",

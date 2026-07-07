@@ -2,8 +2,7 @@ const shoulderDislocation = {
   "shoulder-dislocation": {
     title: "Shoulder Dislocation Treatment",
 
-    image:
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a",
+    image: "/TreatmentImages/soldierDislocation.png",
 
     heroDescription:
       "Shoulder Dislocation Treatment restores shoulder stability, relieves pain, and helps patients safely return to daily activities, work, and sports through advanced orthopedic care.",
@@ -143,8 +142,7 @@ const shoulderDislocation = {
       },
       {
         question: "How long does shoulder dislocation surgery take?",
-        answer:
-          "The procedure generally takes about 1 to 2 hours.",
+        answer: "The procedure generally takes about 1 to 2 hours.",
       },
       {
         question: "When can I return to work?",

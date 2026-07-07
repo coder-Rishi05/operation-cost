@@ -2,8 +2,7 @@ const kneeArthroscopy = {
   "knee-arthroscopy": {
     title: "Knee Arthroscopy Surgery",
 
-    image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f",
+    image: "/TreatmentImages/kneeArthroscopy.png",
 
     heroDescription:
       "Knee Arthroscopy is a minimally invasive procedure used to diagnose and treat various knee conditions with smaller incisions, faster recovery, less pain, and improved joint function.",

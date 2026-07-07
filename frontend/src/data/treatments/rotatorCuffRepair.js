@@ -2,8 +2,7 @@ const rotatorCuffRepair = {
   "rotator-cuff-repair": {
     title: "Rotator Cuff Repair Surgery",
 
-    image:
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a",
+    image: "/TreatmentImages/rotatorCuffRepair.png",
 
     heroDescription:
       "Rotator Cuff Repair Surgery relieves shoulder pain, restores strength, and improves mobility by repairing torn shoulder tendons using advanced arthroscopic techniques.",
@@ -14,23 +13,19 @@ const rotatorCuffRepair = {
     types: [
       {
         title: "Partial Rotator Cuff Tear",
-        description:
-          "The tendon is damaged but not completely torn.",
+        description: "The tendon is damaged but not completely torn.",
       },
       {
         title: "Full Thickness Tear",
-        description:
-          "The tendon is completely torn away from the bone.",
+        description: "The tendon is completely torn away from the bone.",
       },
       {
         title: "Acute Rotator Cuff Tear",
-        description:
-          "Occurs suddenly after trauma or a fall.",
+        description: "Occurs suddenly after trauma or a fall.",
       },
       {
         title: "Degenerative Rotator Cuff Tear",
-        description:
-          "Develops gradually due to age-related wear and tear.",
+        description: "Develops gradually due to age-related wear and tear.",
       },
     ],
 
@@ -141,8 +136,7 @@ const rotatorCuffRepair = {
       },
       {
         question: "How long does rotator cuff surgery take?",
-        answer:
-          "The surgery usually takes around 1.5 to 2.5 hours.",
+        answer: "The surgery usually takes around 1.5 to 2.5 hours.",
       },
       {
         question: "When can I drive after surgery?",

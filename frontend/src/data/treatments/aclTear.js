@@ -2,8 +2,7 @@ const aclTear = {
   "acl-tear": {
     title: "ACL Tear Treatment",
 
-    image:
-      "https://images.unsplash.com/photo-1538108149393-fbbd81895907",
+    image: "/TreatmentImages/acl_tear.png",
 
     heroDescription:
       "ACL Tear Treatment helps restore knee stability, reduce pain, and safely return patients to sports and daily activities through advanced rehabilitation or minimally invasive surgery.",
@@ -14,8 +13,7 @@ const aclTear = {
     types: [
       {
         title: "Grade 1 ACL Tear",
-        description:
-          "A mild ligament stretch with minimal instability.",
+        description: "A mild ligament stretch with minimal instability.",
       },
       {
         title: "Grade 2 ACL Tear",
@@ -119,12 +117,7 @@ const aclTear = {
 
     cost: {
       india: "₹1,20,000 – ₹3,50,000",
-      dependsOn: [
-        "Hospital",
-        "City",
-        "Type of graft",
-        "Insurance coverage",
-      ],
+      dependsOn: ["Hospital", "City", "Type of graft", "Insurance coverage"],
     },
 
     faq: [
@@ -135,13 +128,11 @@ const aclTear = {
       },
       {
         question: "How long does ACL surgery take?",
-        answer:
-          "The surgery usually takes 1.5 to 2 hours.",
+        answer: "The surgery usually takes 1.5 to 2 hours.",
       },
       {
         question: "When can I walk after ACL surgery?",
-        answer:
-          "Most patients begin walking with support within 1–2 days.",
+        answer: "Most patients begin walking with support within 1–2 days.",
       },
       {
         question: "When can I return to sports?",
@@ -154,4 +145,4 @@ const aclTear = {
   },
 };
 
-export default aclTear; 
+export default aclTear;

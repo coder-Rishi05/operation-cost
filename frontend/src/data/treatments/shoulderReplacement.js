@@ -2,8 +2,7 @@ const shoulderReplacement = {
   "shoulder-replacement": {
     title: "Shoulder Replacement Surgery",
 
-    image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f",
+    image: "/TreatmentImages/shoulderReplacement.png",
 
     heroDescription:
       "Shoulder Replacement Surgery relieves chronic shoulder pain, restores joint function, and helps patients regain strength and mobility using advanced joint replacement techniques.",
@@ -137,8 +136,7 @@ const shoulderReplacement = {
       },
       {
         question: "How long does shoulder replacement surgery take?",
-        answer:
-          "The procedure usually takes between 2 and 3 hours.",
+        answer: "The procedure usually takes between 2 and 3 hours.",
       },
       {
         question: "How long do shoulder implants last?",

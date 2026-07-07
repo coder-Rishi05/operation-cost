@@ -2,8 +2,7 @@ const carpalTunnel = {
   "carpal-tunnel": {
     title: "Carpal Tunnel Syndrome Treatment",
 
-    image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f",
+    image: "/TreatmentImages/Carpal Tunnel Syndrome Treatment.png",
 
     heroDescription:
       "Carpal Tunnel Syndrome Treatment relieves numbness, tingling, pain, and weakness in the hand by reducing pressure on the median nerve through advanced non-surgical care or minimally invasive surgery.",

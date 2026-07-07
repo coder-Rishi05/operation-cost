@@ -2,8 +2,7 @@ const totalKneeReplacement = {
   "total-knee-replacement": {
     title: "Total Knee Replacement",
 
-    image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1e",
+    image: "/TreatmentImages/total knee replacement.png",
 
     heroDescription:
       "Total Knee Replacement is an advanced surgical procedure that replaces the damaged knee joint with an artificial implant to relieve pain and restore normal movement.",
@@ -111,12 +110,7 @@ const totalKneeReplacement = {
 
     cost: {
       india: "₹2,00,000 – ₹5,00,000",
-      dependsOn: [
-        "Hospital",
-        "City",
-        "Implant type",
-        "Insurance coverage",
-      ],
+      dependsOn: ["Hospital", "City", "Implant type", "Insurance coverage"],
     },
 
     faq: [
@@ -127,8 +121,7 @@ const totalKneeReplacement = {
       },
       {
         question: "How long does the surgery take?",
-        answer:
-          "The surgery usually takes around 2 hours.",
+        answer: "The surgery usually takes around 2 hours.",
       },
       {
         question: "When can I walk after surgery?",

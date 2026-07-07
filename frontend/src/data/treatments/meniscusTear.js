@@ -2,8 +2,7 @@ const meniscusTear = {
   "meniscus-tear": {
     title: "Meniscus Tear Treatment",
 
-    image:
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a",
+    image: "/TreatmentImages/meniscustear.png",
 
     heroDescription:
       "Meniscus Tear Treatment helps relieve knee pain, restore movement, and improve joint stability through advanced rehabilitation or minimally invasive arthroscopic surgery.",
@@ -117,12 +116,7 @@ const meniscusTear = {
 
     cost: {
       india: "₹70,000 – ₹2,00,000",
-      dependsOn: [
-        "Hospital",
-        "City",
-        "Type of surgery",
-        "Insurance coverage",
-      ],
+      dependsOn: ["Hospital", "City", "Type of surgery", "Insurance coverage"],
     },
 
     faq: [
@@ -133,13 +127,11 @@ const meniscusTear = {
       },
       {
         question: "How long does meniscus surgery take?",
-        answer:
-          "The procedure usually takes between 45 and 90 minutes.",
+        answer: "The procedure usually takes between 45 and 90 minutes.",
       },
       {
         question: "When can I walk after surgery?",
-        answer:
-          "Most patients can walk with support within 1–2 days.",
+        answer: "Most patients can walk with support within 1–2 days.",
       },
       {
         question: "When can I return to sports?",

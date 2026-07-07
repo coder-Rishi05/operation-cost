@@ -21,6 +21,7 @@ const TreatmentCard = ({ item }) => {
           alt={item.title}
           loading="lazy"
           onLoad={() => setImageLoaded(true)}
+          onError={() => setImageLoaded(true)}
           className={`h-full w-full object-cover transition-opacity duration-500 ${
             imageLoaded ? "opacity-100" : "opacity-0"
           }`}
@@ -28,19 +29,8 @@ const TreatmentCard = ({ item }) => {
       </div>
 
       <div className="p-6">
-        {!imageLoaded ? (
-          <>
-            <div className="h-6 bg-gray-200 rounded animate-pulse mb-4"></div>
-            <div className="h-5 w-28 bg-gray-200 rounded animate-pulse"></div>
-          </>
-        ) : (
-          <>
-            <h3 className="text-xl font-bold">{item.title}</h3>
-            <p className="text-blue-600 mt-3 font-semibold">
-              Learn More →
-            </p>
-          </>
-        )}
+        <h3 className="text-xl font-bold">{item.title}</h3>
+        <p className="text-blue-600 mt-3 font-semibold">Learn More →</p>
       </div>
     </Link>
   );

@@ -2,8 +2,7 @@ const hipReplacement = {
   "hip-replacement": {
     title: "Hip Replacement Surgery",
 
-    image:
-      "https://images.unsplash.com/photo-1580281657527-47f249e8f4df",
+    image: "/TreatmentImages/hip_replacement.png",
 
     heroDescription:
       "Hip Replacement Surgery relieves chronic hip pain by replacing the damaged joint with an artificial implant, helping patients walk comfortably and regain an active lifestyle.",
@@ -62,12 +61,7 @@ const hipReplacement = {
       "Inflammatory arthritis",
     ],
 
-    diagnosis: [
-      "Physical examination",
-      "X-ray",
-      "MRI Scan",
-      "Blood tests",
-    ],
+    diagnosis: ["Physical examination", "X-ray", "MRI Scan", "Blood tests"],
 
     nonSurgicalTreatment: [
       "Pain medications",
@@ -116,12 +110,7 @@ const hipReplacement = {
 
     cost: {
       india: "₹2,00,000 – ₹5,00,000",
-      dependsOn: [
-        "Hospital",
-        "City",
-        "Implant type",
-        "Insurance coverage",
-      ],
+      dependsOn: ["Hospital", "City", "Implant type", "Insurance coverage"],
     },
 
     faq: [
@@ -132,13 +121,11 @@ const hipReplacement = {
       },
       {
         question: "How long does hip replacement surgery take?",
-        answer:
-          "The procedure usually takes 2 to 3 hours.",
+        answer: "The procedure usually takes 2 to 3 hours.",
       },
       {
         question: "When can I walk after surgery?",
-        answer:
-          "Most patients begin walking within 24 hours with support.",
+        answer: "Most patients begin walking within 24 hours with support.",
       },
       {
         question: "How long do hip implants last?",
